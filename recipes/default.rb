@@ -19,7 +19,7 @@
 
 gem_package "god" do
   action :install
-  gem_binary "/usr/local/bin/gem"
+  gem_binary node['god']['gem_bin']
 end
 
 directory "/etc/god/conf.d" do
